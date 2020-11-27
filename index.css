@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background: rgba(128, 128, 128, 0.397);
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: indianred;
+}
+
+.searchBar {
+  width: 95%;
+  position: relative;
+}
+
+.searchBar input[type='search'] {
+  width: 100%;
+  padding: 11px;
+  padding-right: 60px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  outline: none;
+  font-size: 18px;
+}
+
+.searchBar input[type='search']:focus-within {
+  border: 2px solid #fff;
+}
+
+.fa-search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 80px);
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contacts {
+  width: 100%;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 95%;
+  margin: 2rem auto;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+
+.table th,
+.table td {
+  border: 1px solid indianred;
+  padding: 5px 10px;
+}
+
+.error {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.fa-stroopwafel {
+  font-size: 5rem;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+::-moz-placeholder {
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  color: transparent;
+  width: 0;
+}
+
+/*mobile*/
+@media screen and (max-width: 600px) {
+  .table-head {
+    display: none;
+  }
+
+  .table tr,
+  .table td {
+    display: block;
+  }
+
+  .table tr:not(:last-child) {
+    border-bottom: 5px solid indianred;
+  }
+
+  .table td {
+    padding-left: 54%;
+    font-size: 1rem;
+    position: relative;
+  }
+
+  .table td::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    width: 45%;
+    font-size: 1rem;
+    font-weight: bold;
+    content: attr(data-col-title);
+    padding: 6px;
+  }
+}
+
+/*desktop*/
+@media screen and (min-width: 600px) {
+  .searchBar {
+    width: 50%;
+  }
+  .table {
+    width: 80%;
+    margin: 3rem auto;
+  }
+
+  .fa-stroopwafel {
+    font-size: 8rem;
+  }
+}

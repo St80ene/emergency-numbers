@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Police Emergency Numbers</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon_io/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon_io/favicon.ico"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="searchBar">
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Type to search"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="loader" id="loader">
+        <i class="fas fa-stroopwafel fa-spin"></i>
+      </div>
+
+      <div class="container">
+        <table class="table">
+          <thead class="table-head">
+            <tr>
+              <th>S/N</th>
+              <th>Name</th>
+              <th>Emergency Number</th>
+              <th>Dial</th>
+            </tr>
+          </thead>
+          <tbody id="contacts"></tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+  <script src="./index.js"></script>
+</html>
