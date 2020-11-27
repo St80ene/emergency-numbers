@@ -4,6 +4,8 @@
 
 body,
 html {
+  width: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
@@ -53,7 +55,7 @@ html {
 .main {
   position: relative;
   width: 100%;
-  min-height: calc(100vh - 80px);
+  min-height: 100%;
 }
 
 .loader {
@@ -87,8 +89,23 @@ html {
   text-align: center;
 }
 
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 18px;
+}
+
 .fa-stroopwafel {
   font-size: 5rem;
+}
+
+.fa-phone {
+  color: indianred;
 }
 
 ::-webkit-input-placeholder {

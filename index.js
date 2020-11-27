@@ -53,7 +53,7 @@ const searchNumbers = async (searchText) => {
 
   if (searchText) {
     filterNumbers = res.filter((item) => {
-      const regex = new RegExp(`^${searchText}`, 'gi');
+      const regex = new RegExp(`${searchText}`, 'gi');
 
       return item['name'].match(regex);
     });
